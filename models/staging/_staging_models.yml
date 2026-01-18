@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: bog_transactions_stg
+    description: "BOG Transactions staging table"
+    columns:
+      - name: transaction_date
+        description: "The transaction date"
+        data_tests:
+          - not_null
+      - name: rrn
+        description: "RRN uniquely identifies the transaction"
+        data_tests:
+          - unique
+          - not_null

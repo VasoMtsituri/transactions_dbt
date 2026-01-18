@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: BOG_TRANSACTIONS
+    database: project-6e4dc205-0d7d-44c6-975
+    schema: transactions
+    tables:
+      - name: bog
