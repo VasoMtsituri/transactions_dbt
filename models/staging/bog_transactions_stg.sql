@@ -5,4 +5,4 @@ SELECT
     settlement_amount,
     operation_type,
     rrn
-FROM {{ source("BOG_TRANSACTIONS", "bog") }}
+FROM {{ source("TRANSACTIONS_BQ", "bog") }}
