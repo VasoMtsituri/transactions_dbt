@@ -1,8 +1,16 @@
 version: 2
 
 models:
-  - name: transactions_daily
+  - name: bog_transactions_daily
     description: "BOG Transactions gold layer table (Daily aggregated)"
+    columns:
+      - name: transaction_date
+        description: "The transaction date"
+        data_tests:
+          - not_null
+          - unique
+  - name: tbc_transactions_daily
+    description: "TBC Transactions gold layer table (Daily aggregated)"
     columns:
       - name: transaction_date
         description: "The transaction date"
