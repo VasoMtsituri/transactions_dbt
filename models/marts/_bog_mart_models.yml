@@ -17,3 +17,25 @@ models:
         data_tests:
           - not_null
           - unique
+  - name: bog_transactions_daily_by_operation
+    description: "BOG Transactions gold layer table (Daily aggregated by operation type)"
+    columns:
+      - name: transaction_date
+        description: "The transaction date"
+        data_tests:
+          - not_null
+      - name: operation_type
+        description: "The type of operation"
+        data_tests:
+          - not_null
+  - name: tbc_transactions_daily_by_operation
+    description: "TBC Transactions gold layer table (Daily aggregated by operation type)"
+    columns:
+      - name: transaction_date
+        description: "The transaction date"
+        data_tests:
+          - not_null
+      - name: operation_type
+        description: "The type of operation"
+        data_tests:
+          - not_null
